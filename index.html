@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1 user-scalable=0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="converter">
+            <h2>Temperature Converter</h2>
+            <table>
+                <tr>
+                    <td id="label">Degrees</td>
+                    <td id="label">Type</td>
+                </tr>
+                <tr>
+                    <td><input id="deg" type="text" value="0"></td>
+                    <span id="err"></span>
+                    <td><select name="temp_diff" id="type">
+                            <option value="cel">Celsius</option>
+                            <option value="fah">Fahrenheit</option>
+                        </select></select></td>
+                </tr>
+                <tr>
+                    <td class="custom-margin" colspan="2" id="label">Result</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div id="result"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input id="submit" type="submit" value="Convert" onclick="convertTemp();"></td>
+                </tr>
+
+            </table>
+
+
+            <footer>Design: Chandrakant Patil</footer>
+        </div>
+
+    </div>
+</body>
+<script src="./srcipt.js"></script>
+
+</html>
